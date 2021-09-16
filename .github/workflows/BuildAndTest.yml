@@ -1,4 +1,4 @@
-name: B uild
+name: Build and Test
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET Core
+    - name: Setup Build and Test configuration
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.x
